@@ -7,7 +7,7 @@
 
 
 
-    <section class="bg-white dark:bg-gray-900 h-[9rem] sm:h-[10rem] md:h-[10rem] lg:h-full xl:h-full 2xl:h-full">
+    <section class="bg-white dark:bg-gray-900 h-[9rem] sm:h-[10rem] md:h-[10rem] lg:h-full xl:h-full 2xl:h-full border-[3px] border-dashed border-[#B3B3B3]   rounded-lg">
       <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1  lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2">
 
 
@@ -29,13 +29,13 @@ lg:visible xl:visible 2xl:visible">
         </div>
       </div>
     </section>
-    <hr>
-    <section class="bg-white dark:bg-gray-900 mt-3 mb-4">
-      <div class="grid grid-cols-1">
-        <div class="">
-          <h3 class="text-[2rem] font-bold">Skills</h3>
+
+    <section class="mt-[3rem] mb-6 bg-white dark:bg-gray-900 ">
+     
+        <div class="text-center mb-6">
+          <h3 class="text-[1.6rem] sm:text-[1.6rem] md:text-[1.7rem] lg:text-[2rem] font-bold">Skills</h3>
         </div>
-      </div>
+ 
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-5 gap-4">
         <div v-for="(row, key) in skills">
 
@@ -61,18 +61,21 @@ lg:visible xl:visible 2xl:visible">
     <hr>
 
 
-    <section class="bg-white dark:bg-gray-900 mt-2">
+    <section class="mt-[3rem] mb-6 bg-white dark:bg-gray-900">
+      <div class="text-center mb-6">
+        <h3 class="text-[1.6rem] sm:text-[1.6rem] md:text-[1.7rem] lg:text-[2rem] font-bold">Projects</h3>
+      </div>
       <div class="flex flex-row flex-wrap justify-center gap-4">
         <div v-for="(row, key) in projects" class="basis-1/4 ">
 
           <div
-            class="max-w-sm min-h-60 mx-h-60 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-full flex flex-col ">
             <a :href="row.url" target="_new" class="flex justify-center">
               <img class="rounded-t-lg h-[200px]" :src="row.image" />
             </a>
             <div class="p-5 text-center">
               <a :href="row.url" target="_new">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ row.name }}</h5>
+                <h5 class="text-[16px] sm:text-[16px] md:text-[17px] lg:text-[18px] xl:text-[20px] font-bold mb-2  tracking-tight text-gray-900 dark:text-white">{{ row.name }}</h5>
               </a>
 
               <a :href="row.url" target="_new"
@@ -113,6 +116,9 @@ const skills = ref([
   { id: 14, name: 'Nuxt', html: `<i class="fa-brands fa-vuejs"></i>` },
   { id: 15, name: 'Unreal Engine5', html: `<i class="fa-solid fa-gamepad"></i>` },
   { id: 16, name: 'Unity', html: `<i class="fa-solid fa-gamepad"></i>` },
+  { id: 17, name: 'Design a model with Blender', html: `<i class="fa-solid fa-tablet"></i>` },
+  { id: 18, name: 'Digital Paint', html: `<i class="fa-solid fa-tablet"></i>` },
+  { id: 19, name: 'Card', html: `<i class="fa-solid fa-tablet"></i>` },
 ]);
 const projects = ref([
   { id: 1, name: 'The script store has an automatic payment system PHP.', url: 'https://www.nargor.dev/', image: '/images/scripts_shop.png' },

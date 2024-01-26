@@ -1,8 +1,7 @@
 <template>
   <Navbar></Navbar>
-  <div class="mt-[70px]">
     <slot></slot>
-  </div>
+  
   <Footer></Footer>
 
 </template>
