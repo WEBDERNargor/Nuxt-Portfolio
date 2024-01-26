@@ -6,6 +6,8 @@ export default defineNuxtConfig({
       website_name:"Nargor"
     }
   },
+css:['~/assets/css/input.css'],
+  
   app:{
     head:{
       title:"Nargor",
@@ -13,6 +15,7 @@ export default defineNuxtConfig({
         lang: 'th'
       },
       link:[
+        {href:'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css',rel:'stylesheet'},
         {href:'/images/apple-touch-icon.png',size:'180x180',rel:'apple-touch-icon' },
         {href:'/images/favicon-32x32.png',size:'32x32',rel:'icon',type:"image/png"},
         {href:'/images/favicon-16x16.png',size:'16x16',rel:'icon',type:"image/png"},
