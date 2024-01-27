@@ -47,6 +47,7 @@ css:['~/assets/css/input.css'],
     
   },
   modules: [
-    '@nuxtjs/tailwindcss'
-]
+    '@nuxtjs/tailwindcss',
+    
+],
 })
