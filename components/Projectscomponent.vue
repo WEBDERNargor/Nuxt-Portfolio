@@ -5,8 +5,7 @@
     <div class="flex flex-row flex-wrap justify-center gap-4">
         <div v-for="(row, key) in projects" class="basis-1/4 ">
 
-            <div
-                class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-full flex flex-col ">
+            <div class="flex flex-col max-w-sm w-screen bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-full   ">
                 <a :href="row.url" target="_new" class="flex justify-center">
                     <img class="rounded-t-lg h-[200px]" :src="row.image" />
                 </a>
@@ -18,7 +17,7 @@
                     </a>
 
                     <a :href="row.url" target="_new"
-                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-800 hover:bg-gray-900 rounded-lg  focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                         เข้าชม
                         <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             fill="none" viewBox="0 0 14 10">
@@ -35,13 +34,13 @@
 </template>
 
 <script setup lang="ts">
-interface projects {
-  name: string;
-  url: string;
-  image: string;
+interface Projects {
+    name: string;
+    url: string;
+    image: string;
 }
-const config=useRuntimeConfig();
-const  { data:projects, pending, error, refresh } = await useFetch<projects[]>(`${config.public.base_api}/projects.json`);
+const config = useRuntimeConfig();
+const { data: projects, pending, error, refresh } = await useFetch<Projects[]>(`${config.public.base_api}/projects.json`);
 </script>
 
 <style scoped></style>
