@@ -7,10 +7,10 @@
         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Nargor</span>
       </NuxtLink>
       <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <button type="button"
+        <a href="/files/ditsarut_sukkong.pdf"  target="_blank" type="button"
           class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Resume
-          <i class="fa-solid fa-download"></i></button>
-        <button data-collapse-toggle="navbar-sticky" type="button"
+          <i class="fa-solid fa-download"></i></a>
+        <a data-collapse-toggle="navbar-sticky" type="button"
           class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-sticky" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
@@ -18,7 +18,7 @@
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M1 1h15M1 7h15M1 13h15" />
           </svg>
-        </button>
+        </a>
       </div>
       <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
         <ul
