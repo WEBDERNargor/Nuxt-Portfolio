@@ -30,14 +30,24 @@ lg:visible xl:visible 2xl:visible">
         </div>
       </div>
     </section>
-    <section id="skilltag" class="mt-[3rem] mb-6 bg-white dark:bg-gray-900">
+  
+
+    <section  class="mt-[3rem] mb-6 bg-white dark:bg-gray-900">
       <Skillcomponent></Skillcomponent>
     </section>
     <hr>
-    <section class="mt-[3rem] mb-6 bg-white dark:bg-gray-900 ">
+    <section  class="mt-[3rem] mb-6 bg-white dark:bg-gray-900 ">
       <Projectscomponent></Projectscomponent>
-
+  
     </section>
+    <hr>
+    <section  class="mt-[3rem] mb-6 bg-white dark:bg-gray-900">
+      <Aboutcomponent></Aboutcomponent>
+    </section>
+    <hr>
+       <section  class="mt-[3rem] mb-6 bg-white dark:bg-gray-900 ">
+        <Contractcomponent></Contractcomponent>
+       </section>
   </div>
 </template>
 

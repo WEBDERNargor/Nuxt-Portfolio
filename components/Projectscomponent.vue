@@ -1,6 +1,6 @@
 <template>
     <div class="text-center mb-6">
-        <h3 class="text-[1.6rem] sm:text-[1.6rem] md:text-[1.7rem] lg:text-[2rem] font-bold">Projects</h3>
+        <h3 id="project" class="text-[1.6rem] sm:text-[1.6rem] md:text-[1.7rem] lg:text-[2rem] font-bold">Projects</h3>
     </div>
     <div class="flex flex-row flex-wrap justify-center gap-4">
         <div v-for="(row, key) in projects" class="basis-1/4 ">

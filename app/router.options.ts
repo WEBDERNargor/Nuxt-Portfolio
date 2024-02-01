@@ -6,9 +6,10 @@ export default <RouterConfig>{
     // scroll to hash, useful for using to="#some-id" in NuxtLink
     // ex: <NuxtLink to="#top"> To Top </ NuxtLink>
     if (to.hash) {
-      console.log('to.hash: ', to.hash);
+      // console.log('to.hash: ', to.hash);
       return {
         el: to.hash,
+        top: 100,
         behavior: 'smooth',
       };
     }

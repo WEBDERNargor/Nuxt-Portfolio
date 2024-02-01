@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     }
   },
 css:['~/assets/css/input.css'],
-  
+  layoutTranstion:{name:'layout',mode:'out-in'},
   app:{
     head:{
       title:"Nargor",
