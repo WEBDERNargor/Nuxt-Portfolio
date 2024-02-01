@@ -3,7 +3,8 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   runtimeConfig:{
     public:{
-      website_name:"Nargor"
+      website_name:"Nargor",
+      base_api:"https://portfolio.nargor.dev/"
     }
   },
 css:['~/assets/css/input.css'],

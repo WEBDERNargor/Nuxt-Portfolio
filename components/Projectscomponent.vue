@@ -35,11 +35,13 @@
 </template>
 
 <script setup lang="ts">
-const projects = ref([
-    { id: 1, name: 'The script store has an automatic payment system PHP.', url: 'https://www.nargor.dev/', image: '/images/scripts_shop.png' },
-    { id: 2, name: 'Complete online store with payment system and google login PHP.', url: 'https://shop.nargor.dev/', image: '/images/shop_payment.png' },
-    { id: 3, name: 'Shop Api', url: 'https://shop.nargor.dev/api/', image: '/images/shopapi.png' },
-]);
+interface projects {
+  name: string;
+  url: string;
+  image: string;
+}
+const config=useRuntimeConfig();
+const  { data:projects, pending, error, refresh } = await useFetch<projects[]>(`${config.public.base_api}/projects.json`);
 </script>
 
 <style scoped></style>

@@ -27,27 +27,12 @@
 </template>
 
 <script setup lang="ts">
-const skills = ref([
-    { id: 1, name: 'GIT', html: `<i class="fa-brands fa-github"></i>` },
-    { id: 2, name: 'Javascript', html: `<i class="fa-brands fa-js"></i>` },
-    { id: 3, name: 'PHP', html: `<i class="fa-brands fa-php"></i>` },
-    { id: 4, name: 'Go', html: `<i class="fa-brands fa-golang"></i>` },
-    { id: 5, name: 'Java', html: `<i class="fa-brands fa-java"></i>` },
-    { id: 6, name: 'C++', html: `<i class="fa-solid fa-c"></i>` },
-    { id: 7, name: 'C#', html: `<i class="fa-solid fa-c"></i>` },
-    { id: 8, name: 'Html', html: `<i class="fa-brands fa-html5"></i>` },
-    { id: 9, name: 'css', html: `<i class="fa-brands fa-css3"></i>` },
-    { id: 10, name: 'Scss', html: `<i class="fa-brands fa-sass"></i>` },
-    { id: 11, name: 'React', html: `<i class="fa-brands fa-react"></i>` },
-    { id: 12, name: 'React Native', html: `<i class="fa-brands fa-react"></i>` },
-    { id: 13, name: 'Vue', html: `<i class="fa-brands fa-vuejs"></i>` },
-    { id: 14, name: 'Nuxt', html: `<i class="fa-brands fa-vuejs"></i>` },
-    { id: 15, name: 'Unreal Engine5', html: `<i class="fa-solid fa-gamepad"></i>` },
-    { id: 16, name: 'Unity', html: `<i class="fa-solid fa-gamepad"></i>` },
-    { id: 17, name: 'Design a model with Blender', html: `<i class="fa-solid fa-tablet"></i>` },
-    { id: 18, name: 'Digital Paint', html: `<i class="fa-solid fa-tablet"></i>` },
-    { id: 19, name: 'Card', html: `<i class="fa-solid fa-tablet"></i>` },
-]);
+interface Skill {
+  name: string;
+  html: string;
+}
+const config=useRuntimeConfig();
+const  { data:skills, pending, error, refresh } = await useFetch<Skill[]>(`${config.public.base_api}/skills.json`);
 </script>
 
 <style scoped></style>
