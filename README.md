@@ -1,6 +1,6 @@
 # Nuxt 3 Portfolio
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Demo : [Click](https://portfolio.nargor.dev/) to learn more.
 
 ## Setup
 
