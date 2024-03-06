@@ -1,6 +1,6 @@
 # Nuxt 3 Portfolio
 
-Demo : [Click](https://portfolio.nargor.dev/) to learn more.
+Demo : [Click](https://portfolio.nargor.dev/)
 
 ## Setup
 
