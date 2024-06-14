@@ -5,7 +5,7 @@
 
     <div class="flex flex-row flex-wrap justify-center gap-4">
         
-        <div v-for="(row, key) in socials" :key="key">
+        <div v-for="(row, key) in socials" >
 
 
           

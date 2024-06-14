@@ -3,7 +3,7 @@
         <h3 id="project" class="text-[1.6rem] sm:text-[1.6rem] md:text-[1.7rem] lg:text-[2rem] font-bold">Projects</h3>
     </div>
     <div class="flex flex-row flex-wrap justify-center gap-4">
-        <div v-for="(row, key) in projects" class="basis-1/4 " :key="key">
+        <div v-for="(row, key) in projects" class="basis-1/4 " >
 
             <div class="flex flex-col max-w-sm w-screen bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-full   ">
                 <a :href="row.url" target="_new" class="flex justify-center">
