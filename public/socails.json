@@ -1,0 +1,6 @@
+[
+    { "id": 1, "name": "Facebook", "html": "<i class='fa-brands fa-facebook'></i>","content":"https://www.facebook.com/webder2020" },
+    { "id": 3, "name": "Email", "html": "<i class='fa-solid fa-envelope'></i>","content":"ditsarutsukkong@gmail.com"},
+    { "id": 2, "name": "Youtube", "html": "<i class='fa-brands fa-youtube'></i>","content":"https://www.youtube.com/@webder.nargor/videos"},
+    { "id": 2, "name": "Github", "html": "<i class='fa-brands fa-github'></i>","content":"https://github.com/WEBDERNargor"}
+]

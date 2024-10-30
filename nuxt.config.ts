@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   runtimeConfig:{
     public:{
       website_name:"Nargor",
-      base_api:"https://portfolio.nargor.dev/"
+      base_api:"http://185.84.160.131/"
     }
   },
 css:['~/assets/css/input.css'],
